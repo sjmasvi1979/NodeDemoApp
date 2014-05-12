@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Hello
+  
+  ul
+    each user in users
+      li: a(href="/users/#{user.name}") #{user.name} (#{user.email})
+
+  ul
+    li: a(href="/users/new") Create New User

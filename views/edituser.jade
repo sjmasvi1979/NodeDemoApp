@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Edit User
+
+  form(method='POST' action='/users/#{user.name}')
+    input(type='hidden' name='_method' value='PUT')
+    p Name:
+      input(type='text' name='name' value='#{user.name}')
+    p Email:
+      input(type='text' name='email' value='#{user.email}')
+    p Age:
+      input(type='text' name='age' value='#{user.age}')
+    div(class='control-strip')
+      button(type='submit') Update
+      button(type='button' onclick="common.moveToUsers()") Cancel
+  

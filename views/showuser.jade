@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Showing User
+  h1 #{user.name}
+
+  ul
+    li Email: #{user.email}
+    li Age: #{user.age}
+
+  ul
+    li: a(href="/users/#{user.name}/edit") Edit
+    li: form(method='POST' action='/users/#{user.name}')
+          input(type='hidden' name='_method' value='DELETE')
+          button(type='submit') Delete

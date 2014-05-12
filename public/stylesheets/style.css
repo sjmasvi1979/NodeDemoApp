@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.control-strip {
+	height: 30px;
+	background-color: #f3f3f3;
+	padding: 3px;
+	border: solid 1px #c0c0c0;
+}
+
+.control-strip input {
+	display: inline-block;
+}
